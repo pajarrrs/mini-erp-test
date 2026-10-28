@@ -14,7 +14,7 @@ describe('timeAgo', () => {
   const now = new Date('2026-10-28T12:00:00Z')
 
   it('shows a dash when there is no date', () => {
-    expect(timeAgo(null, now)).toBe('—')
+    expect(timeAgo(null, now)).toBe('-')
   })
 
   it('shows minutes, hours and days', () => {

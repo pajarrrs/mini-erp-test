@@ -6,7 +6,7 @@ export function formatRupiah(amount: number): string {
 }
 
 export function timeAgo(isoDate: string | null, now: Date = new Date()): string {
-  if (isoDate === null) return '—'
+  if (isoDate === null) return '-'
 
   const seconds = Math.floor((now.getTime() - new Date(isoDate).getTime()) / 1000)
   if (seconds < 60) return 'just now'

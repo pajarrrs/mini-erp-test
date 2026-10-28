@@ -1,4 +1,4 @@
-# Mini ERP Test — Inventory & Sales
+# Mini ERP Test - Inventory & Sales
 
 A small app to manage products, adjust stock and record sales orders.
 PostgreSQL → Go API → React + TypeScript UI.
@@ -93,7 +93,7 @@ Every error has the same shape:
 
 | Method | Path | Result |
 |---|---|---|
-| GET | `/api/products?search=&status=&page=&limit=` | `{data, page, limit, total}` — status: `active`, `inactive`, `low_stock` |
+| GET | `/api/products?search=&status=&page=&limit=` | `{data, page, limit, total}` - status: `active`, `inactive`, `low_stock` |
 | POST | `/api/products` | 201 · 400 · 409 `SKU_ALREADY_EXISTS` |
 | PUT | `/api/products/{id}` | 200 · 400 · 404 |
 | DELETE | `/api/products/{id}` | 204 · 404 · 409 `PRODUCT_HAS_HISTORY` |
@@ -177,4 +177,4 @@ an `ApiError`. After a change (stock adjustment, new order, cancel) `App` increa
 
 ## Hours spent
 
-_TODO: fill in honestly._
+- 6 Hours
